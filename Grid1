@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional website building agency">
+    <meta name="keywords" content="web development, web design, website building">
+    <title>Website Building Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">WebBuild<span>Agency</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Building Stunning Websites</h1>
+            <p>We create professional, dynamic, and responsive websites tailored to your needs.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At WebBuild Agency, we are a team of dedicated web developers and designers with years of experience in building high-quality websites for businesses of all sizes.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>High-quality code that delivers fast, responsive, and secure websites.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Web Design</h3>
+                    <p>Visually stunning designs that captivate and engage your audience.</p>
+                </div>
+                <div class="service-card">
+                    <h3>E-commerce Solutions</h3>
+                    <p>Powerful e-commerce platforms that drive your sales and customer engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="fade-in">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">Project 1</div>
+                <div class="portfolio-item">Project 2</div>
+                <div class="portfolio-item">Project 3</div>
+                <div class="portfolio-item">Project 4</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WebBuild Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00b4d8;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0077b6;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-cards, .portfolio-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.service-card, .portfolio-item {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item {
+    height: 200px;
+    background-color: #0077b6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0077b6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animation Styles */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+// Function to show sections with fade-in animation
+document.addEventListener('DOMContentLoaded', function() {
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+        threshold: 0.3
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});
